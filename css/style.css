@@ -1,0 +1,311 @@
+@import "fonts.css";
+
+@media (min-width: 1200px) {
+  .container {
+      width: 1200px;
+  }
+}
+
+p,ul,h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.right {
+  float: right;
+}
+
+.left {
+  float:left;
+}
+
+.top-line {
+  padding: 10px 0 13px 0;
+  border-bottom: 2px solid #ccc;
+}
+
+.left-side {
+  float: left;
+}
+
+.countries-list {
+  float: left;
+  border-right: 1px solid #000;
+  padding-right: 18px;
+}
+
+.countries-list img {
+  margin-right: 10px;
+}
+
+.countries-list span {
+  text-transform: uppercase;
+  font-family: 'HelveticaNeueLt', 'Helvetica', 'Arial', 'sans-serif';
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.countries-list .fa-angle-down {
+  font-size: 18px;
+}
+
+.welcome-msg {
+  margin-left: 145px;
+  font-size: 12px;
+}
+
+.welcome-msg p {
+  padding-top: 3px;
+  letter-spacing: 2px;
+  font-family: 'HelveticaNeueLt', 'Helvetica', 'Arial', 'sans-serif';
+}
+
+.welcome-msg .welcome {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.welcome-msg .italic {
+  font-style: italic;
+}
+
+.welcome-msg .underline a {
+  color: #000;
+  text-decoration: underline;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.welcome-msg .underline a:hover {
+  opacity: .8;
+}
+
+.right-side {
+  float: right;
+  list-style-type: none;
+  position: relative;
+}
+
+.right-side li {
+  float: left;
+}
+
+.right-side li:nth-child(2) {
+  margin-left: 19px;
+  margin-right: 46px;
+}
+
+.right-side li:nth-child(2) img {
+  padding-right: 3px;
+}
+
+.right-side li:nth-child(4) {
+  border-right: 1px solid #000;
+  margin-right: 20px;
+  padding-right: 15px;
+}
+
+.right-side li:nth-child(4) img {
+  padding-right: 3px;
+}
+
+.right-side li a {
+  color: #000;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+
+.right-side li a:hover {
+  text-decoration: none;
+  opacity: .8;
+}
+
+.vertical-line {
+  position: absolute;
+  top: -10px;
+  right: 164px;
+  width: 1px;
+  height: 45px;
+  background-color: #ccc;
+  display: inline-block;
+}
+
+.price {
+  font-family: 'TextCondProTh', 'Helvetica', 'Arial', 'sans-serif';
+  font-size: 18px;
+  line-height: 1;
+}
+
+.top-info {
+  position: relative;
+}
+
+.top-info {
+  padding: 35px 0 60px 0;
+}
+
+.text-left span,
+.text-right span {
+  display: block;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #787878;
+  letter-spacing: 2px;
+  line-height: 1;
+}
+
+.text-right span {
+  text-align: right;
+}
+
+.text-right span:first-child,
+.text-left span:first-child {
+  margin-bottom: 19px;
+}
+
+.logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav {
+  list-style-type: none;
+  padding-bottom: 27px;
+}
+
+.nav li {
+  display: inline-block;
+  margin-left: 48px;
+}
+
+.nav li:first-child {
+  margin-left: 0;
+}
+
+.nav li a {
+  color: #000;
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  font-family: "HelveticaNeueLt", 'Helvetica', 'Arial', 'sans-serif';
+}
+
+.nav li:last-child a {
+  color: #9a2722;
+}
+
+.nav li a:hover {
+  color: #9a2722;
+  text-decoration: none;
+}
+
+.img-main {
+  background: url('../img/main-img.png') no-repeat center center;
+  height: 588px;
+  text-align: center;
+}
+
+.img-main span {
+  display: block;
+  line-height: 1;
+}
+
+.main-descr {
+  font-family: "HelveticaNeueTh", 'Helvetica', 'Arial', 'sans-serif';
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding-top: 260px;
+  margin-bottom: 44px;
+}
+
+.main-text {
+  font-family: 'TextCondProTh', 'Helvetica', 'Arial', 'sans-serif';
+  font-size: 60px;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.button {
+  background: transparent;
+  outline: none;
+  text-transform: uppercase;
+  border: 1px solid #fff;
+  color: #fff;
+  width: 190px;
+  height: 45px;
+  font-family: "HelveticaNeueTh", 'Helvetica', 'Arial', 'sans-serif';
+  letter-spacing: 2px;
+  margin-top: 50px;
+}
+
+.button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+#content-top {
+  background: url('../img/content-bg.png');
+  position: relative;
+}
+
+.offer {
+  width: 562px;
+  text-align: center;
+}
+
+.offer h1 {
+  font-family: 'TextCondProTh', 'Helvetica', 'Arial', 'sans-serif';
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1;
+  margin-top: 65px;
+  margin-bottom: 25px;
+  color: #000;
+}
+
+.offer span {
+  display: block;
+
+}
+
+.descr {
+  font-family: "HelveticaNeueTh", 'Helvetica', 'Arial', 'sans-serif';
+  font-size: 16px;
+  font-style: italic;
+  letter-spacing: 3px;
+  font-weight: 600;
+}
+
+.offer span.price {
+  font-size: 60px;
+  font-weight: 600;
+  color: #000;
+  margin-top: 30px;
+}
+
+.offer .button {
+  color: #000;
+  border: 1px solid #000;
+  font-weight: 600;
+}
+
+/*ну как-то бы по-другому спозиционирвать эту пикчу,
+может всунуть её все-таки в контейнер и пробовать что-то мутить*/
+
+.content-top-img {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 100%;
+  max-width: 595px;
+}
