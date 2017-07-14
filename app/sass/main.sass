@@ -1,0 +1,179 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+@import "reset"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	font-family: $default-font
+	overflow-x: hidden
+	opacity: 1
+	color: #000
+
+h1
+	color: #fff
+	font-size: 60px
+	font-weight: 100
+h2
+	color: #fff
+	font-size: 50px
+	font-weight: 100
+
+// USER STYLES --------------------------->
+
+.page-header
+.top-line
+	border-bottom: 1px solid $top-line-border-color
+.top-line__left,
+.top-line__right
+	display: flex
+	align-items: center
+	padding: 15px 0
+	.us-flag
+		margin-right: 8px
+	.span
+		text-transform: uppercase
+		letter-spacing: 2px
+		font-weight: 300
+		margin-right: 8px
+		font-size: 12px
+		position: relative
+		&:after
+			content: ' '
+			position: absolute
+			top: -7px
+			right: -43px
+			width: 1px
+			height: 26px
+			background-color: #000
+	.angle-down
+		margin-right: 40px
+	.greeting
+		font-size: 12px
+		font-weight: 100
+		font-style: italic
+		letter-spacing: 2px
+		.welcome
+			font-weight: 300
+			text-transform: uppercase
+			font-style: normal
+		.sign-in
+			font-weight: 400
+			text-decoration: underline
+			color: #000
+			&:hover
+				opacity: .8
+
+.top-line__right
+
+.search-icon
+	margin-right: 16px
+.heart-wrap
+	display: flex
+	align-items: center
+	margin-right: 45px
+	position: relative
+	letter-spacing: 2px
+	&:after
+		content: ' '
+		position: absolute
+		top: -16px
+		right: -19px
+		width: 1px
+		height: 52px
+		background-color: $top-line-border-color
+.heart-icon
+.count
+	margin-left: 8px
+	font-size: 14px
+.bag-wrap
+	display: flex
+	align-items: center
+	margin-right: 33px
+	letter-spacing: 2px
+	position: relative
+	&:after
+		content: ' '
+		position: absolute
+		top: -3px
+		right: -15px
+		width: 1px
+		height: 26px
+		background-color: #000	
+.bag-icon
+.price
+	font-family: $PfdInTextCompPro-font
+	font-weight: 700
+	font-size: 18px
+
+.page-header__header-info
+	display: flex
+	justify-content: space-between
+	align-items: center
+	margin-top: 30px
+.left-text-wrap
+.header-info__text
+	font-weight: 300
+	font-size: 12px
+	color: $header-info-text-color
+	margin-bottom: 20px
+	letter-spacing: 2px
+	&:nth-child(even)
+		margin-bottom: 0
+.page-header__logo
+.right-text-wrap
+	text-align: right
+
+.nav
+	&__list
+		display: flex
+		margin-top: 64px
+	&__item
+		margin-left: 46px
+		&:first-child
+			margin-left: 0
+	&__link
+		color: #000
+		text-transform: uppercase
+		letter-spacing: 2px
+		font-weight: 400
+		font-size: 16px
+		white-space: nowrap
+		&.sale
+			color: $accent
+		&:hover
+			opacity: .8
+			color: #000
+			text-decoration: none
+
+// USER STYLES ENDS ---------------------->
+
+@import "media" 
