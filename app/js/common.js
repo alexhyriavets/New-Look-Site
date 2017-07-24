@@ -11,4 +11,15 @@ $(function() {
 		});
 	});
 
+
+	$('.collection__slider').slick({
+	  infinite: true,
+	  slidesToShow: 5,
+	  slidesToScroll: 1,
+	  prevArrow: '<img class="left-arrow" src="../img/slider/arrow-left.png"/>',
+	  nextArrow: '<img class="right-arrow" src="../img/slider/arrow-right.png"/>',
+	  autoplay: true,
+	  autoplaySpeed: 2000
+	});
+
 });
