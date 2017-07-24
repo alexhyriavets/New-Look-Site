@@ -1,0 +1,548 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+@import "reset"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	font-family: $default-font
+	overflow-x: hidden
+	opacity: 1
+	color: #000
+
+a
+	color: inherit
+	&:hover
+		color: inherit
+	&:visited
+		color: inherit
+
+h1
+	color: #fff
+	font-size: 60px
+	font-weight: 100
+h2
+	color: #fff
+	font-size: 50px
+	font-weight: 100
+
+// USER STYLES --------------------------->
+
+.page-header
+.top-line
+	border-bottom: 1px solid $top-line-border-color
+.top-line__left,
+.top-line__right
+	display: flex
+	align-items: center
+	padding: 15px 0
+	.us-flag
+		margin-right: 8px
+	.span
+		text-transform: uppercase
+		letter-spacing: 2px
+		font-weight: 300
+		margin-right: 8px
+		font-size: 12px
+		position: relative
+		&:after
+			content: ' '
+			position: absolute
+			top: -7px
+			right: -43px
+			width: 1px
+			height: 26px
+			background-color: #000
+	.angle-down
+		margin-right: 40px
+	.greeting
+		font-size: 12px
+		font-weight: 100
+		font-style: italic
+		letter-spacing: 2px
+		.welcome
+			font-weight: 300
+			text-transform: uppercase
+			font-style: normal
+		.sign-in
+			font-weight: 400
+			text-decoration: underline
+			color: #000
+			&:hover
+				opacity: .8
+
+.top-line__right
+	justify-content: flex-end
+.search-icon
+	margin-right: 16px
+.heart-wrap
+	display: flex
+	align-items: center
+	margin-right: 45px
+	position: relative
+	letter-spacing: 2px
+	&:after
+		content: ' '
+		position: absolute
+		top: -16px
+		right: -19px
+		width: 1px
+		height: 52px
+		background-color: $top-line-border-color
+.heart-icon
+.count
+	margin-left: 8px
+	font-size: 14px
+.bag-wrap
+	display: flex
+	align-items: center
+	margin-right: 33px
+	letter-spacing: 2px
+	position: relative
+	&:after
+		content: ' '
+		position: absolute
+		top: -3px
+		right: -15px
+		width: 1px
+		height: 26px
+		background-color: #000	
+.bag-icon
+.price
+	font-family: $PfdInTextCompPro-font
+	font-weight: 700
+	font-size: 18px
+
+.page-header__header-info
+	display: flex
+	justify-content: space-between
+	align-items: center
+	margin-top: 30px
+.left-text-wrap
+.header-info__text
+	font-weight: 300
+	font-size: 12px
+	color: $header-info-text-color
+	margin-bottom: 20px
+	letter-spacing: 2px
+	&:nth-child(even)
+		margin-bottom: 0
+.page-header__logo
+.right-text-wrap
+	text-align: right
+
+.nav
+	&__list
+		display: flex
+		margin-top: 64px
+	&__item
+		margin-left: 46px
+		&:first-child
+			margin-left: 0
+	&__link
+		color: #000
+		text-transform: uppercase
+		letter-spacing: 2px
+		font-weight: 400
+		font-size: 16px
+		white-space: nowrap
+		&.sale
+			color: $accent
+		&:hover
+			opacity: .8
+			color: #000
+			text-decoration: none
+.banner
+	background: url('../img/banner-bg.png') no-repeat center
+	background-size: cover 
+	margin-top: 25px
+	letter-spacing: 2px
+	&__description
+		color: #fff
+		font-weight: 100
+		font-size: 14px
+		text-transform: uppercase
+		position: relative
+		&:before
+			content: ' '
+			position: absolute
+			top: 6px
+			left: -34px
+			height: 1px
+			width: 23px
+			background-color: #FFF
+		&:after
+			content: ' '
+			position: absolute
+			top: 6px
+			right: -34px
+			height: 1px
+			width: 23px
+			background-color: #FFF
+	&__title
+		font-family: $PfdInTextCompPro-font
+		font-size: 60px
+		font-weight: 100
+		text-transform: uppercase
+		margin-top: 44px
+.shop-button
+	width: 192px
+	font-size: 16px
+	font-weight: 300
+	color: #fff
+	text-transform: uppercase
+	padding: 14px 0
+	border: none
+	outline: none
+	border: 1px solid #fff
+	background-color: transparent
+	text-align: center
+	cursor: pointer
+	margin-top: 47px
+	letter-spacing: 2px
+	&:hover
+		color: #000
+		background-color: #fff
+		transition: all 1.5s
+.banner__composition
+	display: flex
+	flex-flow: column wrap
+	align-items: center
+	padding-top: 250px
+	padding-bottom: 110px
+
+.new-season
+	position: relative
+	background: url('../img/new-season-bg.png')
+	&__composition
+		width: 450px
+		text-align: center
+		margin-top: 60px
+		padding-bottom: 95px
+	&__title
+		font-family: $PfdInTextCompPro-font
+		font-weight: 100
+		text-transform: uppercase
+		font-size: 40px
+	&__descr
+		font-weight: 100
+		font-style: italic
+		letter-spacing: 2px
+		margin-top: 25px
+	&__price
+		font-size: 60px
+		margin-top: 25px
+	&__button
+		margin-top: 25px
+		border: 1px solid #000
+		color: #000
+		&:hover
+			color: #fff
+			background-color: #000
+			transition: all 1.5s
+	&__img
+		position: absolute
+		top: 0
+		right: -110px
+
+.gallery__wrap
+	position: relative
+	float: left
+	width: 100%
+	height: 100%
+	margin-top: 50px
+	img
+		width: 100%
+		height: 100%
+		display: block
+.gallery__item
+	margin-bottom: 23px
+.social
+	width: 23%
+	height: 280px
+	position: relative
+.swimwear
+	width: 23%
+	height: 432px
+	&:hover .swimwear__cover
+		height: 100%
+		transition: all ease .7s
+.man
+	width: 49%
+	height: 432px
+	.span
+		color: $accent
+		font-weight: 500
+	&:hover .man__cover
+		height: 100%
+		transition: all ease .7s
+
+.trend
+	width: 23%
+	height: 557px
+	&:hover .trend__cover
+		height: 100%
+		transition: all ease .7s
+.shop-boho
+	width: 73.7%
+	background: url('../img/galery/bone-lux.png') no-repeat center
+	text-align: center
+	color: #fff
+	padding: 105px 0
+	padding-left: 286px
+	text-transform: uppercase
+	letter-spacing: 2px
+	.span
+		font-weight: 100
+		font-size: 14px
+		margin-bottom: 32px
+		display: block
+		position: relative
+		&:before
+			content: ' '
+			position: absolute
+			top: 7px
+			left: 170px
+			width: 23px
+			height: 1px
+			background-color: #fff
+		&:after
+			content: ' '
+			position: absolute
+			top: 7px
+			right: 170px
+			width: 23px
+			height: 1px
+			background-color: #fff
+
+	.h2
+		font-family: $PfdInTextCompPro-font
+		font-weight: 100
+		font-size: 50px
+	.boho-button
+		margin-top: 40px
+.square
+	position: absolute
+	width: 50px
+	height: 50px
+	border: 1px solid #000
+	display: flex
+	justify-content: center
+	align-items: center
+	transform: rotate(45deg)
+	cursor: pointer
+	&:hover
+		color: #fff
+		background-color: #000
+		transition: all linear .7s
+	.fa
+		transform: rotate(-45deg)
+		font-size: 25px
+
+.fb
+	top: 86px
+	left: 12px
+.tw
+	top: 86px
+	left: 112px
+.pt
+	top: 86px
+	right: 16px
+.gp
+	top: 135px
+	left: 61px
+.it
+	top: 135px
+	left: 158px
+
+.gallery__item-cover
+	background-color: rgba(255,255,255,.7)
+	letter-spacing: 2px
+	font-weight: 300
+	font-size: 20px
+	width: 100%
+	height: 67px
+	position: absolute
+	top: 0
+	left: 0
+	display: flex
+	justify-content: center
+	align-items: center
+	text-transform: uppercase
+	&:after
+		content: ' '
+		width: 12px
+		height: 12px
+		background-color: #000
+		transform: rotate(45deg) translateX(-50%)
+		position: absolute
+		bottom: -10px
+		left: 50%
+
+.gallery__wrap
+	.man__cover,
+	.trend__cover
+		top: 100%
+		transform: translateY(-100%)
+		&:after
+			top: -2px
+
+.collection
+	position: relative
+	&__title
+		color: #000
+		font-size: 36px
+		font-weight: 100
+		text-align: center
+		text-transform: uppercase
+		letter-spacing: 2px
+		margin-top: 30px
+		margin-bottom: 36px
+	&__slider-wrap
+		background-color: #f7f7f7
+	&__slider
+		overflow: hidden
+	&__img
+.left-arrow,
+.right-arrow
+	position: absolute
+	top: 50%
+	left: -10px
+	transform: translateY(-50%)
+	height: 30px
+	cursor: pointer
+.right-arrow
+	left: 101%
+	transform: translateX(-100%)
+
+.location
+	background-color: #f7f7f7
+	margin-top: 67px
+	&__guidemap-wrap
+		padding: 50px 0
+		padding-left: 100px
+	&__img
+		height: 259px
+	&__left-wrap
+		color: $location-font-color
+		letter-spacing: 2px
+		display: flex
+		flex-flow: column wrap
+		align-items: center
+	&__title
+		font-weight: 100
+		font-size: 30px
+		text-transform: uppercase
+		margin-top: 75px
+	&__descr
+		font-size: 14px
+		font-weight: 100
+		font-style: italic
+		margin-top: 35px
+.location-button
+	width: 295px
+	color: $location-font-color
+	border: 1px solid $location-font-color
+	margin-top: 40px
+
+.page-footer
+	margin-top: 80px
+	padding-top: 38px
+	border-top: 1px solid #ccc
+	&__get-in-touch
+		display: flex
+		align-items: center
+		letter-spacing: 2px
+	&__form
+	&__label
+		font-weight: 100
+		font-size: 18px
+		text-transform: uppercase
+	&__input
+		width: 410px
+		padding: 13px 0
+		padding-left: 19px
+		outline: none
+		&::placeholder
+			font-size: 14px
+			font-weight: 100
+			font-style: italic
+			color: $location-font-color
+			letter-spacing: 2px
+	&__text-wrap
+		text-align: center
+		margin-left: 53px
+		font-size: 14px
+		font-style: italic
+	&__text
+		font-weight: 100
+		line-height: 1.5
+		.span
+			display: block
+			font-weight: 500
+			color: #000
+	&__bottom
+		background-color: $footer-color
+		color: #fff
+		margin-top: 40px
+	&__nav-wrap
+		display: flex
+		justify-content: space-between
+		align-items: center
+	&__nav
+	&__list
+		display: flex
+		text-transform: uppercase
+	&__item
+		padding: 15px 0
+		margin-left: 40px
+		&:first-child
+			margin-left: 0
+	&__link
+		font-weight: 100
+		font-size: 16px
+		letter-spacing: 2px
+		&:hover
+			opacity: .8
+			text-decoration: none
+	&__copyrights
+		font-weight: 100
+		font-size: 11px
+		letter-spacing: 2px
+.footer-button
+	margin-top: 0
+	background-color: $footer-color
+	&:hover
+		background-color: $footer-color
+		color: #fff
+		opacity: .8
+// USER STYLES ENDS ---------------------->
+@import "media" 
