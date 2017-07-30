@@ -34,7 +34,7 @@
 		<div class="top-line">
 			<div class="container">
 				<div class="row justify-content-between">
-					<div class="col-6">
+					<div class="col-xs-12 col-sm-6">
 						<div class="top-line__left">
 							<img src="img/usa-flag.png" alt="usa" class="us-flag">
 							<span class="span">(usa)</span>
@@ -42,7 +42,7 @@
 							<p class="greeting"><span class="welcome">welcome,</span> Please <a href="#" class="sign-in">Sign In</a></p>
 						</div>
 					</div>
-					<div class="col-6">
+					<div class="col-xs-12 col-sm-6">
 						<div class="top-line__right">
 							<img src="img/search-icon.png" alt="search" class="search-icon">
 							<div class="heart-wrap">
@@ -89,6 +89,11 @@
 							<li class="nav__item"><a class="nav__link" href="#">trend</a></li>
 							<li class="nav__item "><a href="#" class="nav__link sale">sale</a></li>
 						</ul>
+						<div class="sandwich">
+							<div class="sw-topper"></div>
+							<div class="sw-bottom"></div>
+							<div class="sw-footer"></div>
+						</div>
 					</nav>
 				</div>
 			</div>
@@ -117,7 +122,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="galery">
+<!-- 	<section class="galery hidden-md-down">
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
@@ -160,6 +165,53 @@
 				</div>
 			</div>
 		</div>
+	</section> -->
+		<section class="galery">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="gallery__wrap">
+						<div class="gallery__item social">
+							<div class="square fb">
+								<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+							</div>
+							<div class="square tw">
+								<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+							</div>
+							<div class="square pt">
+								<a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+							</div>
+							<div class="square gp">
+								<a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+							</div>
+							<div class="square it">
+								<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+							</div>
+						</div>
+						<div class="gallery__item swimwear">
+							<a href="#"><div class="gallery__item-cover swimwear__cover">shop swimwear</div>
+							<img src="img/galery/shop-swimwear.png" alt="swimwear" class="shop-swimwear"></a>
+						</div>	
+						<div class="gallery__item man">
+							<a href="#"><div class="gallery__item-cover man__cover"><span class="span">sale&nbsp;</span>man collection</div>
+							<img src="img/galery/man.png" alt="man wear" class="shop-man-wear"></a>
+						</div>				
+						<div class="gallery__item trend ">
+							<a href="#"><div class="gallery__item-cover trend__cover">trend guides</div>
+							<img src="img/galery/trend.png" alt="girl trend" class="shop-trend"></a>
+						</div>							
+						<div class="gallery__item shop-boho ">
+							<img class="shop-boho-img" src="img/galery/bone-lux.png" alt="kimonos">
+							<div class="shop-boho-content">
+								<span class="span">flower collection</span>
+								<h2 class="h2">boho luxe print kimono</h2>
+								<button class="shop-button boho-button">shop kimonos</button>
+							</div>
+						</div>	
+					</div>
+				</div>
+			</div>
+		</div>
 	</section>
 	<section class="collection">
 		<h2 class="collection__title">new collection</h2>
@@ -183,12 +235,12 @@
 	<section class="location">
 		<div class="container">
 			<div class="row">
-				<div class="col-7">
+				<div class="col-7 hidden-sm-down">
 					<div class="location__guidemap-wrap">
 						<img src="img/guidedmap.png" alt="guide map" class="location__img">
 					</div>
 				</div>
-				<div class="col-5">
+				<div class="col-sm-5 col-12">
 					<div class="location__left-wrap">
 						<h3 class="location__title">store locator</h3>
 						<p class="location__descr">Select a store in your country on the map</p>
