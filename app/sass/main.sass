@@ -54,7 +54,7 @@ h2
 	font-size: 50px
 	font-weight: 100
 
-// USER STYLES --------------------------->
+// USER STYLES __--__
 
 .page-header
 	&__Logo
@@ -163,6 +163,60 @@ h2
 .right-text-wrap
 	text-align: right
 
+// sandwich code __--__
+
+
+$w: 32px
+$h: 4px
+.sandwich
+	display: none
+	cursor: pointer
+.sw-topper
+    position: relative
+    top: 0
+    width: $w 
+    height: $h
+    background: rgb(0, 0, 0);
+    border: none; 
+    border-radius: 4px 4px 4px 4px;
+    transition: transform 0.5s, top 0.2s;
+
+.sw-bottom
+    position: relative
+    width: $w
+    height: $h
+    top: 5px
+    background: rgb(0, 0, 0);
+    border: none;
+    border-radius: 4px 4px 4px 4px;
+    transition: transform 0.5s, top 0.2s;
+    transition-delay: 0.2s, 0s; 
+
+.sw-footer
+    position: relative
+    width: $w
+    height: $h
+    top: 10px
+    background: rgb(0, 0, 0);
+    border: none;
+    border-radius: 4px 4px 4px 4px;
+    transition: all 0.5s;
+    transition-delay: 0.1s; 
+
+.sandwich.active 
+  .sw-topper
+    top: 9px;
+    transform: rotate(140deg);
+  .sw-bottom
+    top: 5px;
+    transform: rotate(-140deg);
+  .sw-footer
+    opacity: 0;
+    top: 0;
+    transform: rotate(180deg);
+
+// sandwich code ends --__--
+
 .nav
 	&__list
 		display: flex
@@ -246,6 +300,7 @@ h2
 .new-season
 	position: relative
 	background: url('../img/new-season-bg.png')
+	overflow-x: hidden
 	&__composition
 		width: 450px
 		text-align: center
@@ -450,6 +505,7 @@ h2
 .location
 	background-color: #f7f7f7
 	margin-top: 67px
+	overflow-x: hidden
 	&__guidemap-wrap
 		padding: 50px 0
 		padding-left: 100px
@@ -481,6 +537,7 @@ h2
 	margin-top: 80px
 	padding-top: 38px
 	border-top: 1px solid #ccc
+	overflow-x: hidden
 	&__get-in-touch
 		display: flex
 		align-items: center

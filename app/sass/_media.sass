@@ -2,32 +2,14 @@
 
 /*==========  Desktop First  ==========*/
 
-// Extra small devices (portrait phones, less than 576px)
-@media (max-width: 575px)
-	.top-line__left,
-	.top-line__right
-		justify-content: center
-	.top-line__right
-		justify-content: space-between
-	.heart-wrap:after,
-	.bag-wrap:after,
-		display: none
-	.top-line__left
-		.span
-			&:after
-				display: none
-// Small devices (landscape phones, less than 768px)
-@media (max-width: 767px)
-	.left-text-wrap,
-	.right-text-wrap
-		display: none
-	.top-line__left .greeting,
-	.top-line__right .greeting
-		font-size: 11px
-	.heart-wrap
-		margin-right: 22px
-	.heart-wrap:after
-		right: -10px
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199px)
+	.nav__list
+		margin-top: 33px
+	.nav__link
+		font-size: 10px
+	.new-season__img
+		right: -190px
 
 // Medium devices (tablets, less than 992px)
 @media (max-width: 991px)
@@ -42,10 +24,79 @@
 		margin-left: 25px
 	.nav__link
 		letter-spacing: 1px
-// Large devices (desktops, less than 1200px)
-@media (max-width: 1199px)
-	.nav__list
-		margin-top: 33px
-	.nav__link
-		font-size: 10px
+	.new-season__img
+		right: -200px
+		width: 540px
+		height: auto
+	.new-season__composition
+		width: 360px
+		padding-bottom: 31px
 
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767px)
+	.page-header__logo
+		margin-bottom: 10px
+	.left-text-wrap,
+	.right-text-wrap
+		display: none
+	.top-line__left .greeting,
+	.top-line__right .greeting
+		font-size: 11px
+	.heart-wrap
+		margin-right: 22px
+	.heart-wrap:after
+		right: -10px
+	.nav
+		position: relative
+	.sandwich
+		display: block
+		position: absolute
+		top: 0
+		left: 0
+	.nav__list
+		display: none
+		width: 100%
+	.nav__item
+		margin-left: 0
+		text-align: center
+		margin-bottom: 10px
+		border-bottom: 1px solid #ccc
+		padding-bottom: 4px
+	.nav__link
+		font-size: 14px
+	.banner
+		margin-top: 40px
+	.new-season__composition
+		width: 100%
+		margin-top: 300px
+	.new-season__img
+		right: 50%
+		transform: translateX(50%)
+		width: 450px
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575px)
+	.top-line__left,
+	.top-line__right
+		justify-content: center
+	.top-line__right
+		justify-content: space-between
+	.heart-wrap:after,
+	.bag-wrap:after,
+		display: none
+	.top-line__left
+		.span
+			&:after
+				display: none
+	.banner__title
+		font-size: 28px
+	.banner__description
+		font-size: 11px
+	.banner__composition
+		padding-top: 183px
+		padding-bottom: 69px
+	.new-season__title
+		font-size: 35px
+	.new-season__descr
+		font-size: 14px
+	.new-season__price
+		font-size: 40px

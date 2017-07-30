@@ -22,4 +22,16 @@ $(function() {
 	  autoplaySpeed: 2000
 	});
 
+	$(".sandwich, .nav__list").click(function() {
+    	$(".sandwich").toggleClass("active");
+    	$('.nav__list').slideToggle();
+
+    	$(window).resize(function() {
+    		var windowWidth = $(window).width();
+    		if (windowWidth > 767 && $('.nav__list').is(':hidden')) {
+    			$('.nav__list').removeAttr('style');
+    		}
+    	});
+	});
+
 });
