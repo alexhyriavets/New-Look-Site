@@ -332,52 +332,140 @@ $h: 4px
 		top: 0
 		right: -110px
 
-.gallery__wrap
-	position: relative
-	float: left
-	width: 100%
-	height: 100%
+// .gallery__wrap
+// 	position: relative
+// 	float: left
+// 	width: 100%
+// 	height: 100%
+// 	margin-top: 50px
+// 	img
+// 		width: 100%
+// 		height: 100%
+// 		display: block
+// .gallery__item
+// 	margin-bottom: 23px
+// .social
+// 	width: 23%
+// 	height: 280px
+// 	position: relative
+// .swimwear
+// 	width: 23%
+// 	height: 432px
+// 	&:hover .swimwear__cover
+// 		height: 100%
+// 		transition: all ease .7s
+// .man
+// 	width: 49%
+// 	height: 432px
+// 	.span
+// 		color: $accent
+// 		font-weight: 500
+// 	&:hover .man__cover
+// 		height: 100%
+// 		transition: all ease .7s
+
+// .trend
+// 	width: 23%
+// 	height: 557px
+// 	&:hover .trend__cover
+// 		height: 100%
+// 		transition: all ease .7s
+// .shop-boho
+// 	width: 73.7%
+// 	background: url('../img/galery/bone-lux.png') no-repeat center
+// 	text-align: center
+// 	color: #fff
+// 	padding: 105px 0
+// 	padding-left: 286px
+// 	text-transform: uppercase
+// 	letter-spacing: 2px
+// 	.span
+		// font-weight: 100
+		// font-size: 14px
+		// margin-bottom: 32px
+		// display: block
+		// position: relative
+		// &:before
+		// 	content: ' '
+		// 	position: absolute
+		// 	top: 7px
+		// 	left: 170px
+		// 	width: 23px
+		// 	height: 1px
+		// 	background-color: #fff
+		// &:after
+		// 	content: ' '
+		// 	position: absolute
+		// 	top: 7px
+		// 	right: 170px
+		// 	width: 23px
+		// 	height: 1px
+		// 	background-color: #fff
+
+
+
+
+
+
+// .gallery__wrap
+
+.galery
 	margin-top: 50px
+.gallery__wrap
+	display: flex
+	flex-flow: row wrap
+	.man__cover,
+	.trend__cover
+		top: 100%
+		transform: translateY(-100%)
+		&:after
+			top: -2px
+.gallery__item
+	margin-left: 22px
+	position: relative
 	img
 		width: 100%
 		height: 100%
 		display: block
-.gallery__item
-	margin-bottom: 23px
-.social
-	width: 23%
-	height: 280px
+.gallery__item.social
+	width: 260px
+	height: 285px
 	position: relative
-.swimwear
-	width: 23%
-	height: 432px
+	margin-left: 0
+.gallery__item.swimwear
+	max-width: 410px
 	&:hover .swimwear__cover
 		height: 100%
 		transition: all ease .7s
-.man
-	width: 49%
-	height: 432px
-	.span
-		color: $accent
-		font-weight: 500
-	&:hover .man__cover
-		height: 100%
-		transition: all ease .7s
-
-.trend
-	width: 23%
-	height: 557px
+.gallery__item.trend
+	margin-left: 0
+	margin-top: -230px
+	max-width: 280px
 	&:hover .trend__cover
 		height: 100%
 		transition: all ease .7s
-.shop-boho
-	width: 73.7%
-	background: url('../img/galery/bone-lux.png') no-repeat center
-	text-align: center
-	color: #fff
-	padding: 105px 0
-	padding-left: 286px
+.gallery__item.man
+	max-width: 470px
+	&:hover .man__cover
+		height: 100%
+		transition: all ease .7s
+	span
+		color: $accent	
+.gallery__item.shop-boho
+	margin-top: 19px
+	position: relative
+	max-width: 900px
+.shop-boho-content
+	height: 100%
+	position: absolute
+	top: 0
+	right: 110px
+	display: flex
+	align-items: center
+	flex-flow: column wrap
+	justify-content: center
 	text-transform: uppercase
+	color: #fff
 	letter-spacing: 2px
 	.span
 		font-weight: 100
@@ -401,13 +489,13 @@ $h: 4px
 			width: 23px
 			height: 1px
 			background-color: #fff
-
 	.h2
 		font-family: $PfdInTextCompPro-font
 		font-weight: 100
 		font-size: 50px
 	.boho-button
 		margin-top: 40px
+
 .square
 	position: absolute
 	width: 50px
@@ -431,17 +519,16 @@ $h: 4px
 	left: 12px
 .tw
 	top: 86px
-	left: 112px
+	left: 101px
 .pt
 	top: 86px
-	right: 16px
+	right: 20px	
 .gp
-	top: 135px
-	left: 61px
+	top: 130px
+	left: 56px
 .it
-	top: 135px
-	left: 158px
-
+	top: 130px
+	left: 145px
 .gallery__item-cover
 	background-color: rgba(255,255,255,.7)
 	letter-spacing: 2px
@@ -465,14 +552,8 @@ $h: 4px
 		position: absolute
 		bottom: -10px
 		left: 50%
-
-.gallery__wrap
-	.man__cover,
-	.trend__cover
-		top: 100%
-		transform: translateY(-100%)
-		&:after
-			top: -2px
+	.man__cover
+		bottom: 0
 
 .collection
 	position: relative
@@ -490,18 +571,21 @@ $h: 4px
 	&__slider
 		overflow: hidden
 	&__img
-.left-arrow,
-.right-arrow
+.left-arrow
 	position: absolute
 	top: 50%
-	left: -10px
+	left: 0
 	transform: translateY(-50%)
 	height: 30px
 	cursor: pointer
 .right-arrow
-	left: 101%
-	transform: translateX(-100%)
-
+	left: 100%
+	transform: translateX(-100%) translateY(-50%)
+	position: absolute
+	top: 50%
+	right: 0
+	height: 30px
+	cursor: pointer
 .location
 	background-color: #f7f7f7
 	margin-top: 67px
@@ -578,6 +662,7 @@ $h: 4px
 		display: flex
 		justify-content: space-between
 		align-items: center
+		flex-flow: row wrap
 	&__nav
 	&__list
 		display: flex
@@ -591,6 +676,7 @@ $h: 4px
 		font-weight: 100
 		font-size: 16px
 		letter-spacing: 2px
+		white-space: nowrap
 		&:hover
 			opacity: .8
 			text-decoration: none
